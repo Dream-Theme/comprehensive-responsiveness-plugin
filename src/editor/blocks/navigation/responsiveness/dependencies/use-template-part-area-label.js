@@ -1,4 +1,9 @@
 /**
+ * copy of 
+ * @link https://github.com/WordPress/gutenberg/blob/v17.7.0/packages/block-library/src/navigation/use-template-part-area-label.js
+ */
+
+/**
  * WordPress dependencies
  */
 import { store as blockEditorStore } from '@wordpress/block-editor';

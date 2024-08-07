@@ -1,4 +1,9 @@
-export const DEFAULT_BLOCK = {
+/**
+ * copy of
+ * @link https://github.com/WordPress/gutenberg/blob/v17.7.0/packages/block-library/src/navigation/constants.js
+ */
+
+ export const DEFAULT_BLOCK = {
 	name: 'core/navigation-link',
 };
 

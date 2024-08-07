@@ -1,4 +1,9 @@
 /**
+ * copy of 
+ * @link https://github.com/WordPress/gutenberg/blob/v17.7.0/packages/block-library/src/navigation/use-navigation-entities.js
+ */
+
+/**
  * WordPress dependencies
  */
 import { useEntityRecords } from '@wordpress/core-data';

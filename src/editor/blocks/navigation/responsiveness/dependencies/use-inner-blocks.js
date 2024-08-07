@@ -1,4 +1,9 @@
 /**
+ * copy of 
+ * @link https://github.com/WordPress/gutenberg/blob/v17.7.0/packages/block-library/src/navigation/edit/use-inner-blocks.js
+ */
+
+/**
  * WordPress dependencies
  */
 import { useSelect } from '@wordpress/data';

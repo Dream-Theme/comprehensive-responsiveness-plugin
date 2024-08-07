@@ -1,4 +1,9 @@
 /**
+ * copy of 
+ * @link https://github.com/WordPress/gutenberg/blob/v17.7.0/packages/block-library/src/columns/utils.js
+ */
+
+/**
  * Returns a column width attribute value rounded to standard precision.
  * Returns `undefined` if the value is not a valid finite number.
  *

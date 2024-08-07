@@ -1,4 +1,9 @@
 /**
+ * copy of 
+ * @link https://github.com/WordPress/gutenberg/blob/v17.7.0/packages/block-library/src/navigation/menu-items-to-blocks.js
+ */
+
+/**
  * WordPress dependencies
  */
 import { createBlock, parse } from '@wordpress/blocks';

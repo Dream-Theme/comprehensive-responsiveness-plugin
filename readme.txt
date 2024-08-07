@@ -1,11 +1,13 @@
 === Comprehensive Responsiveness for Block Editor ===
 Contributors:      dreamtheme
-Tags:              responsive, responsiveness, responsive rows, responsive blocks, block editor, gutenberg
+Tags:              responsive, responsiveness, responsive rows, responsive blocks, block editor
 Requires at least: 6.5
 Tested up to:      6.6
+Requires PHP:      7.2
 Stable tag:        0.1.0
 License:           GPLv2 or later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+Source codes:      https://github.com/Dream-Theme/comprehensive-responsiveness-plugin
 This plugin adds responsiveness settings to Row and other select blocks. It also introduces responsive visibility settings to all blocks, and more.
 
 == Description ==
@@ -27,11 +29,7 @@ The plugin also adds a small library of responsive patterns to the Block Editor 
 We hope the community finds this plugin useful, and we always appreciate your feedback!
 
 == Screenshots ==
-
-== Changelog ==
-
-= 0.1.0 =
-* Release
-
-== Arbitrary section ==
-
+1. Plugin settings.
+2. Row & Column Responsiveness.
+3. Responsive Visibility.
+4. Navigation Responsiveness.

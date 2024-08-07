@@ -1,4 +1,9 @@
 /**
+ * copy of
+ * @link https://github.com/WordPress/gutenberg/blob/v17.7.0/packages/block-library/src/navigation/edit/use-create-navigation-menu.js
+ */
+
+/**
  * WordPress dependencies
  */
 import { serialize } from '@wordpress/blocks';
