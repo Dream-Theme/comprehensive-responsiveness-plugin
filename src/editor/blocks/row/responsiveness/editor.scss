@@ -1,0 +1,9 @@
+@import "../../../../base-styles/variables";
+
+body
+	.interface-interface-skeleton__sidebar
+	.block-editor-block-inspector
+	.responsive-row
+	.components-base-control__help {
+	@include components-base-control__help;
+}

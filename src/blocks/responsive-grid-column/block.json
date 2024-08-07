@@ -1,0 +1,75 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "dt-cr/responsive-grid-column",
+	"title": "Responsive Grid Column",
+	"category": "design",
+	"parent": [ "dt-cr/responsive-grid" ],
+	"description": "A single column within a responsive grid block.",
+	"textdomain": "dt-cr",
+	"attributes": {
+		"verticalAlignment": {
+			"type": "string"
+		},
+		"allowedBlocks": {
+			"type": "array"
+		},
+		"templateLock": {
+			"type": [ "string", "boolean" ],
+			"enum": [ "all", "insert", "contentOnly", false ]
+		}
+	},
+	"supports": {
+		"__experimentalOnEnter": true,
+		"anchor": true,
+		"reusable": false,
+		"html": false,
+		"layout": true,
+		"color": {
+			"gradients": true,
+			"heading": true,
+			"button": true,
+			"link": true,
+			"__experimentalDefaultControls": {
+				"background": true,
+				"text": true
+			}
+		},
+		"spacing": {
+			"blockGap": true,
+			"padding": true,
+			"__experimentalDefaultControls": {
+				"padding": true,
+				"blockGap": true
+			}
+		},
+		"__experimentalBorder": {
+			"color": true,
+			"style": true,
+			"width": true,
+			"__experimentalDefaultControls": {
+				"color": true,
+				"style": true,
+				"width": true
+			}
+		},
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true,
+			"__experimentalFontFamily": true,
+			"__experimentalFontWeight": true,
+			"__experimentalFontStyle": true,
+			"__experimentalTextTransform": true,
+			"__experimentalTextDecoration": true,
+			"__experimentalLetterSpacing": true,
+			"__experimentalDefaultControls": {
+				"fontSize": true
+			}
+		},
+
+		"interactivity": {
+			"clientNavigation": true
+		}
+	},
+	"editorScript": "file:./index.js"
+}

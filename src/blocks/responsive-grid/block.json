@@ -1,0 +1,94 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "dt-cr/responsive-grid",
+	"title": "Responsive Grid",
+	"category": "design",
+	"allowedBlocks": [ "dt-cr/responsive-grid-column" ],
+	"description": "Display content in multiple columns, with blocks added to each column.",
+	"textdomain": "dt-cr",
+	"attributes": {
+		"displayMode": {
+			"type": "string",
+			"enum": [ "width", "amount" ],
+			"default": "width"
+		},
+		"columnsAmount": {
+			"type": "number",
+			"default": 1
+		},
+		"columnMinWidth": {
+			"type": "string"
+		},
+		"verticalAlignment": {
+			"type": "string"
+		},
+		"stackedViewBreakpoint": {
+			"type": "string",
+			"default": "mobile"
+		},
+		"stackedViewBreakpointCustomValue": {
+			"type": "string"
+		},
+		"templateLock": {
+			"type": [ "string", "boolean" ],
+			"enum": [ "all", "insert", "contentOnly", false ]
+		}
+	},
+	"supports": {
+		"anchor": true,
+		"align": [ "wide", "full" ],
+		"html": false,
+		"color": {
+			"gradients": true,
+			"link": true,
+			"heading": true,
+			"button": true,
+			"__experimentalDefaultControls": {
+				"background": true,
+				"text": true
+			}
+		},
+		"spacing": {
+			"blockGap": {
+				"__experimentalDefault": "2em",
+				"sides": [ "horizontal", "vertical" ]
+			},
+			"margin": [ "top", "bottom" ],
+			"padding": true,
+			"__experimentalDefaultControls": {
+				"padding": true,
+				"blockGap": true
+			}
+		},
+		"__experimentalBorder": {
+			"color": true,
+			"radius": true,
+			"style": true,
+			"width": true,
+			"__experimentalDefaultControls": {
+				"color": true,
+				"radius": true,
+				"style": true,
+				"width": true
+			}
+		},
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true,
+			"__experimentalFontFamily": true,
+			"__experimentalFontWeight": true,
+			"__experimentalFontStyle": true,
+			"__experimentalTextTransform": true,
+			"__experimentalTextDecoration": true,
+			"__experimentalLetterSpacing": true,
+			"__experimentalDefaultControls": {
+				"fontSize": true
+			}
+		}
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"render": "file:./render.php",
+	"style": "file:./style-index.css"
+}

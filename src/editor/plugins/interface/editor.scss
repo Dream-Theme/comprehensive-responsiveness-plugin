@@ -1,0 +1,7 @@
+/**
+ * The following styles get applied inside the editor only.  It should impact only editor interface (e.g., the block sidebar or toolbar).
+ */
+
+body .block-editor-block-panel-inner:not(.is-opened) {
+	padding: 16px 0;
+}

@@ -1,0 +1,103 @@
+@import "../../base-styles/variables";
+
+.wp-block-dt-cr-responsive-grid {
+	// reset variables
+	--columnsAmount: 0;
+	--columnMinWidth: 0px;
+	--gridHorizontalGap: 0px;
+	--gridVerticalGap: 0px;
+
+	display: grid;
+
+	row-gap: var(--gridVerticalGap);
+	column-gap: var(--gridHorizontalGap);
+
+	box-sizing: border-box;
+
+	// Ensure full vertical column stretch when alignment is not set.
+	// This overrides the Layout block support's default align-items setting of `center`.
+	// !!! GWD FIXME !!!
+	align-items: initial !important;
+
+	&.dt-cr-responsive-grid-based-on-amount {
+		grid-template-columns: repeat(
+			auto-fill,
+			minmax(
+				min(
+					max(
+						var(--columnMinWidth),
+						(
+								100% - var(--gridHorizontalGap) *
+									(var(--columnsAmount) - 1)
+							) / var(--columnsAmount)
+					),
+					100%
+				),
+				1fr
+			)
+		);
+	}
+
+	&.dt-cr-responsive-grid-based-on-width {
+		grid-template-columns: repeat(
+			auto-fit,
+			minmax(min(var(--columnMinWidth), 100%), 1fr)
+		);
+	}
+
+	/**
+	* All Columns Alignment
+	*/
+	&.are-vertically-aligned-top {
+		align-items: start;
+	}
+
+	&.are-vertically-aligned-center {
+		align-items: center;
+	}
+
+	&.are-vertically-aligned-bottom {
+		align-items: end;
+	}
+}
+
+// Lower specificity of margin styles so they don't override the Layout block support.
+:where(.wp-block-dt-cr-responsive-grid) {
+	margin-bottom: 1.75em;
+}
+
+// Add low specificity default padding to columns blocks with backgrounds.
+:where(.wp-block-dt-cr-responsive-grid.has-background) {
+	// Matches paragraph block padding.
+	padding: $block-bg-padding--v $block-bg-padding--h;
+}
+
+.wp-block-dt-cr-column {
+	box-sizing: border-box;
+
+	// Prevent the columns from growing wider than their distributed sizes.
+	min-width: var(--columnMinWidth);
+
+	// Prevent long unbroken words from overflowing.
+	word-break: break-word; // For back-compat.
+	overflow-wrap: break-word; // New standard.
+
+	/**
+	* Individual Column Alignment
+	*/
+	&.is-vertically-aligned-top {
+		align-self: start;
+	}
+
+	&.is-vertically-aligned-center {
+		align-self: center;
+	}
+
+	&.is-vertically-aligned-bottom {
+		align-self: end;
+	}
+
+	&.is-vertically-aligned-stretch {
+		align-self: stretch;
+	}
+}

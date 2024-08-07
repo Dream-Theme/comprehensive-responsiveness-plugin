@@ -1,0 +1,10 @@
+/**
+ * Hide original columns and stack on panels 
+ * We rely on order of panels in the editor
+ */
+body
+	.interface-interface-skeleton__sidebar
+	.block-editor-block-inspector:has(.stack-on-with-responsiveness)
+	.components-panel__body:nth-child(1):not(.stack-on-with-responsiveness) {
+	display: none;
+}
