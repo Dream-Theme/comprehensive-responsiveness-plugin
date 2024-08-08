@@ -41,7 +41,7 @@
 		"@wordpress/preferences": "^3.28.0",
 		"@wordpress/prettier-config": "^3.9.0",
 		"@wordpress/private-apis": "^0.33.0",
-		"@wordpress/scripts": "^26.19.0",
+		"@wordpress/scripts": "28.5.0",
 		"ajv": "8.17.1",
 		"eslint-import-resolver-webpack": "0.13.8",
 		"glob": "10.3.12",

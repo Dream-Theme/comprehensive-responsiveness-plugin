@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       Comprehensive Responsiveness for Block Editor.
+ * Plugin Name:       Comprehensive Responsiveness for Block Editor
  * Requires at least: 6.5
  * Requires PHP:      7.0
  * Version:           0.1.0
